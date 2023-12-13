@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&family=Poppins:wght@400;700;800&family=Roboto:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="result">
+      <h1 style="color: hsl(241, 100%, 89%); font-size: 25px">Your result</h1>
+      <article class="circle">
+        <p><span id="num1">76</span><br>
+        <span id="num2">of 100</span></p>
+      </article>
+      <article class="description">
+        <h1 style="color: white; font-size: 30px;">Great</h1>
+        <p style="color: hsl(241, 100%, 89%); margin-top: -10px;">You scored higher than 65% of<br>
+          the people who have taken<br>
+          these tests
+        </p>
+      </article>
+    </div>
+
+    <div class="summary">
+
+      <h1>Summary</h1>
+
+      <article class="section reaction">
+        <div class="summary-left">
+          <img class="summary-icon" alt="">
+          <p style="color: hsl(0, 100%, 67%);" class="summary-title"></p>
+        </div>
+        <div class="summary-right">
+          <p class="score"></p>
+        </div>
+      </article>
+
+      <article class="section memory">
+        <div class="summary-left">
+          <img class="summary-icon" alt="">
+          <p style="color: hsl(39, 100%, 56%);" class="summary-title"></p>
+        </div>
+        <div class="summary-right">
+          <p class="score"></p>
+        </div>
+      </article>
+
+      <article class="section verbal">
+        <div class="summary-left">
+          <img class="summary-icon" alt="">
+          <p style="color: hsl(166, 100%, 37%);" class="summary-title"></p>
+        </div>
+        <div class="summary-right">
+          <p class="score"></p>
+        </div>
+      </article>
+
+      <article class="section visual">
+        <div class="summary-left">
+          <img class="summary-icon" alt="">
+          <p style="color: hsl(234, 85%, 45%);" class="summary-title"></p>
+        </div>
+        <div class="summary-right">
+          <p class="score"></p>
+        </div>
+      </article>
+
+      <button class="summary-btn">Continue</button>
+      
+    </div>
+  </div>
+
+  <script src="code.js"></script>
+</body>
+</html>

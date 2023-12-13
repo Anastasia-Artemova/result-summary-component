@@ -1,0 +1,124 @@
+
+.container{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Hanken Grotesk', sans-serif;
+    box-shadow: 5px 15px 15px hsla(221, 100%, 96%, 0.9);
+    
+}
+
+.result{
+    flex-basis: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.circle{
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    line-height: 30px;
+}
+
+#num1{
+    color: white;
+    font-size: 70px;
+}
+
+#num2{
+    color: hsla(241, 100%, 89%, .5);
+}
+
+.description{
+    text-align: center;
+}
+
+.summary{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+} 
+
+.section{
+    
+    padding-left: 10px;
+    padding-right: 10px; 
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.summary-left{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.reaction{
+    background-color: hsla(0, 100%, 67%, .1);
+}
+
+.memory{
+    background-color: hsla(39, 100%, 56%, .1);
+}
+
+.verbal{
+    background-color: hsla(166, 100%, 37%, .1);
+}
+
+.visual{
+    background-color: hsla(234, 85%, 45%, .1);
+}
+
+.summary-btn{
+    width: 85%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+    background: hsl(224, 30%, 27%);
+    color: rgba(255, 255, 255, .9);
+    font-size: 15px;
+}
+
+.summary-btn:hover{
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px){
+    .container{
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .circle{
+        height: 150px;
+        width: 150px;
+    }
+}
